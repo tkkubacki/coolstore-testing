@@ -606,7 +606,6 @@ objects:
               - /bin/bash
               - -c
               - curl -s -u Skq3VtCd:oktt6yhw 'http://localhost:8080/manager/jmxproxy/?get=Catalina%3Atype%3DServer&att=stateName'
-                |grep -iq 'stateName *= *STARTED'
             initialDelaySeconds: 15
             periodSeconds: 5
             successThreshold: 1
